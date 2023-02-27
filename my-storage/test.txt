@@ -1,0 +1,2 @@
+//my-storage is shared folder with local and cloudera on docker
+normal text file 

@@ -1,0 +1,31 @@
+version: "3.3"
+services:
+  cloudera:
+    image: cloudera/quickstart:latest
+
+    privileged: true
+
+    container_name: cloudera
+
+    hostname: quickstart.cloudera
+
+    command: /usr/bin/docker-quickstart
+
+    ports:
+      - "8020:8020" # HDFS
+
+      - "8022:22" # SSH
+
+      - "50070:50070" # HDFS Rest Namenode
+
+      - "50075:50075" # HDFS Rest Datanode
+
+    tty: true
+
+    stdin_open: true
+
+    volumes:
+      - ./my-storage:/my-storage
+
+volumes:
+  my-storage:
