@@ -9,6 +9,8 @@
 4. Open terminal in repo root directory
 5. Run the following command and wait until process finishes. To check the process status, see in docker logs.
 
+   ![1677498616195](image/README/1677498616195.png)
+
 ```
 docker-compose up -d
 ```
@@ -20,7 +22,6 @@ docker exec -it cloudera sh
 ```
 
 7. To access hive: type "hive" in terminal
-
 8. For accessing NameNode and DataNode
 
 NameNode: http://localhost:50070
