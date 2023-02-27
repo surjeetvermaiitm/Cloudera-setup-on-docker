@@ -20,3 +20,9 @@ docker exec -it cloudera sh
 ```
 
 7. To access hive: type "hive" in terminal
+
+8. For accessing NameNode and DataNode
+
+NameNode: http://localhost:50070
+
+DataNode: http://localhost:50075
